@@ -1,0 +1,29 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "description": "Node.js sample app for OpenShift 3",
+  "main": "server.js",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hunter0103vn/test.git"
+  },
+  "author": "Hoang Minh Quang <hero0103vn@hotmail.com>",
+  "license": "MPL",
+  "bugs": {
+    "url": "https://github.com/hunter0103vn/test/issues"
+  },
+  "homepage": "https://github.com/hunter0103vn/test"
+}
