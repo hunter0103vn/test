@@ -1,10 +1,7 @@
 //  OpenShift sample Node application
 var express = require('express'),
     fs      = require('fs'),
-    app     = express(),
-    eps     = require('ejs');
-
-app.engine('html', require('ejs').renderFile);
+    app     = express();
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
@@ -12,7 +9,7 @@ var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
 app.get('/', function (req, res) {
   // try to initialize the db on every request if it's not already
   // initialized.
-    res.render('index.html');
+    res.sendFile('index.html');
 });
 
 // error handling
